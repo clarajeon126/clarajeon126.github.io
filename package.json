@@ -1,0 +1,19 @@
+{
+  "name": "bfbfbfbfbfbfbf",
+  "version": "1.0.0",
+  "description": "boyfriend uwu",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "clara & hellie",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "firebase": "^9.1.3",
+    "querystring": "^0.2.1"
+  }
+}

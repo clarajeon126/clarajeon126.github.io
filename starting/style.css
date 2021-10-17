@@ -1,0 +1,149 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+   
+}
+body{
+    background-color: #D98080;
+}
+
+#title{
+    text-align: center;
+    color: #fff;
+    transition: 1s;
+}
+
+#title:hover{
+    color: thistle;
+    /* transform: rotate(180deg);
+    font-size: 20vh; */
+}
+
+
+.question{
+    position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd; 
+  padding: 1vh; 
+  text-align: center;
+  
+}
+
+#main-question{
+    font-size: 4vh;
+}
+
+
+ #text-field {
+   height: 4vh;
+    display: block;
+    width: 10vw;
+    
+    background-color: rgba(255, 255, 255, 0.363);
+    border-color: #fff;
+    border-style: solid;
+    margin: auto;
+    border-radius: 1vh;
+    font-size: 3vh;
+    color: white;
+    outline: none;
+}
+
+
+.dot{
+    display: none;
+}
+
+/* to get yes and no on same line */
+.flex-container{
+    display: flex;
+    padding-left: 35vw;
+    padding-right: 35vw;
+}
+#yes-div{
+    flex:1;
+}
+#no-div{
+    flex:1;
+} 
+
+.labell{
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw;
+    padding-left: 1.5vw;
+    cursor: pointer;
+}
+
+.labell:before{
+    content: "";
+    /* display: block;  */
+    position: absolute;
+    width: .9vw;
+    height: 2vh;
+    left: 0;
+    top: 50%;
+    margin-top: -1vh;
+    border: .2vh solid #fff;
+    border-radius: 5vh;;
+}
+
+.labell:after{
+    content: "";
+    /* display: block;  */
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 1vw;;
+    margin-top: 0;
+    background: #fff;
+    border-radius: 5vh;
+    transition: .4s ease-in-out;
+}
+
+:checked + .labell:after {
+      height:1.4vh;
+      width: .7vw;
+      margin-top: -.5vh;
+      left: .2vw;
+    }
+
+ #submit-but{
+     display: none;
+     position: relative;
+     text-align: center;
+     padding: 1vh;
+     margin: auto;
+     margin-top: 48vh;
+     background-color: #fff;
+     border-color: transparent;
+     border-style: solid;
+     border-width: .5vh;
+     border-radius: 2vh;
+     transition: .5s;
+ }   
+ #submit-but:hover{
+    border-color: #4D66BD;
+ }
+ 
+ #enter-label {
+     position: relative;
+     display: none;
+     margin-left: 55vw;
+     padding-top: 53vh;
+     color: white;
+     font-size: 1vw;
+ }
+ #yes-div {
+     display: none;
+ }
+ #no-div {
+     display: none;
+ }
+
+ 
+
+ 
